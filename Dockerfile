@@ -13,5 +13,7 @@ RUN go get -u github.com/astaxie/beego
 
 WORKDIR /go/src/tapi
 
+CMD [ "./tapi" ]
+
 EXPOSE 8080
 VOLUME ["/data"]

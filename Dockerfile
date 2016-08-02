@@ -4,6 +4,8 @@ MAINTAINER "billqiang" <whenjonny@gmail.com>
 
 RUN go get -u github.com/kataras/iris
 RUN go get -u github.com/gosexy/redis
+RUN go get github.com/golang/protobuf/proto
+RUN go get github.com/iris-contrib/middleware/logger
 RUN go get gopkg.in/mgo.v2
 RUN go get github.com/go-sql-driver/mysql
 RUN go get qiniupkg.com/api.v7/conf

@@ -21,9 +21,9 @@ RUN git clone https://github.com/golang/net.git
 RUN git clone https://github.com/golang/crypto.git
 RUN git clone https://github.com/golang/time.git
 RUN mkdir -p $GOPATH/src/golang.org/x/
-RUN cp -R $GOPATH/src/github.com/golang/net $GOPATH/src/golang.org/x/
-RUN cp -R $GOPATH/src/github.com/golang/crypto $GOPATH/src/golang.org/x/
-RUN cp -R $GOPATH/src/github.com/golang/time $GOPATH/src/golang.org/x/
+RUN cp -R ./net $GOPATH/src/golang.org/x/
+RUN cp -R ./crypto $GOPATH/src/golang.org/x/
+RUN cp -R ./time $GOPATH/src/golang.org/x/
 # get iris
 RUN go get github.com/kataras/iris
 RUN go get -u github.com/beego/bee

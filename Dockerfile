@@ -32,9 +32,9 @@ RUN go get gopkg.in/mgo.v2
 RUN go get github.com/go-sql-driver/mysql
 RUN go get -u github.com/gosexy/redis
 # 会遇到问题的：menteslibres.net/gosexy/to
-RUN go get github.com/golang/protobuf
-RUN go get qiniupkg.com/api.v7/conf
-RUN go get qiniupkg.com/api.v7/kodo
+RUN go get -u github.com/golang/protobuf
+RUN go get -u qiniupkg.com/api.v7/conf
+RUN go get -u qiniupkg.com/api.v7/kodo
 
 RUN go get github.com/pingplusplus/pingpp-go/pingpp
 RUN go get github.com/yinhui87/server-sdk-go/RCServerSDK

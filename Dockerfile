@@ -16,9 +16,10 @@ MAINTAINER "billqiang" <whenjonny@gmail.com>
 RUN go get github.com/joho/godotenv
 
 # iris network package 
-RUN go get github.com/golang/net    
-RUN go get github.com/golang/crypto
-RUN go get github.com/golang/time
+RUN cd $GOPATH
+RUN git clone github.com/golang/net    
+RUN git clone github.com/golang/crypto
+RUN git clone github.com/golang/time
 RUN mkdir -p $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/net $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/crypto $GOPATH/src/golang.org/x/

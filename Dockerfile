@@ -13,9 +13,9 @@ MAINTAINER "billqiang" <whenjonny@gmail.com>
 #RUN go get -u github.com/beego/bee
 #RUN go get -u github.com/astaxie/beego
 
-RUN go get golang.org/x/net
-RUN go get golang.org/x/crypto
-RUN go get golang.org/x/time
+#RUN go get golang.org/x/net
+#RUN go get golang.org/x/crypto
+#RUN go get golang.org/x/time
 
 #RUN mkdir -p $GOPATH/src/golang.org/x/
 #RUN cp -R $GOPATH/src/github.com/golang/net $GOPATH/src/golang.org/x/

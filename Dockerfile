@@ -17,9 +17,9 @@ RUN go get github.com/joho/godotenv
 
 # iris network package 
 RUN cd $GOPATH
-RUN git clone github.com/golang/net    
-RUN git clone github.com/golang/crypto
-RUN git clone github.com/golang/time
+RUN git clone https://github.com/golang/net.git
+RUN git clone https://github.com/golang/crypto.git
+RUN git clone https://github.com/golang/time.git
 RUN mkdir -p $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/net $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/crypto $GOPATH/src/golang.org/x/

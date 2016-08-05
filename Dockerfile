@@ -12,17 +12,18 @@ MAINTAINER "billqiang" <whenjonny@gmail.com>
 #RUN go get qiniupkg.com/api.v7/kodo
 #RUN go get -u github.com/beego/bee
 #RUN go get -u github.com/astaxie/beego
+# dot env
+RUN go get github.com/joho/godotenv
 
+# iris network package 
 RUN go get github.com/golang/net    
 RUN go get github.com/golang/crypto
 RUN go get github.com/golang/time
-
 RUN mkdir -p $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/net $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/crypto $GOPATH/src/golang.org/x/
 RUN cp -R $GOPATH/src/github.com/golang/time $GOPATH/src/golang.org/x/
-# 安装iris
-# go get -u github.com/kataras/iris
+# get iris
 RUN go get github.com/kataras/iris
 RUN go get -u github.com/beego/bee
 RUN go get -u github.com/astaxie/beego

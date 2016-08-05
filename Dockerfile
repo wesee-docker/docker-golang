@@ -38,6 +38,7 @@ RUN go get github.com/pingplusplus/pingpp-go/pingpp
 RUN go get github.com/yinhui87/server-sdk-go/RCServerSDK
 RUN go get github.com/pili-engineering/pili-sdk-go/pili
 
+RUN go get github.com/panthesingh/goson
 
 WORKDIR /go/src/tapi
 

@@ -38,7 +38,7 @@ RUN go get github.com/panthesingh/goson
 
 WORKDIR /go/src/tapi
 
-#CMD [ "./tapi" ]
+CMD [ "./tapi" ]
 
 EXPOSE 8080
 VOLUME ["/data"]
